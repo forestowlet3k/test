@@ -12,6 +12,8 @@ function getCsvData(dataPath) {
  });
  request.open('GET', dataPath, true);
  request.send();
+ 
+ return 1;
 }
 
 getCsvData('test.csv');
