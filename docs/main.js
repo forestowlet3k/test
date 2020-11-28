@@ -9,11 +9,12 @@ function getCsvData(dataPath) {
  request.addEventListener('load', (event) => {
   const response = event.target.responseText;
   outputElement.innerHTML = response;
+  console.log("load");
  });
  request.open('GET', dataPath, true);
  request.send();
  
- return 1;
+ console.log("end");
 }
 
 getCsvData('test.csv');
